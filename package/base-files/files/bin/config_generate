@@ -168,10 +168,12 @@ generate_network() {
 			esac
 
 			netm=${netmask:-"255.255.255.0"}
+			str2ip netm "$netm"
+			netmask2prefix prefix "$netm"
+
 			uci -q batch <<-EOF
 				set network.$1.proto='static'
-				set network.$1.ipaddr='$ipad'
-				set network.$1.netmask='$netm'
+				add_list network.$1.ipaddr='$ipad/$prefix'
 			EOF
 			[ -e /proc/sys/net/ipv6 ] && uci set network.$1.ip6assign='60'
 		;;
