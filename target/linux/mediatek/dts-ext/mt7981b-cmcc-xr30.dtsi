@@ -43,19 +43,22 @@
 		};
 	};
 
-	leds {
+    gpio-leds {
 		compatible = "gpio-leds";
 
-		red_led: red {
-			label = "red:status";
-			gpios = <&pio 35 GPIO_ACTIVE_LOW>;
-		};
-
-		white_led: white {
-			label = "white:status";
+		white_led: led-0 {
+			function = LED_FUNCTION_STATUS;
+			color = <LED_COLOR_ID_WHITE>;
 			gpios = <&pio 34 GPIO_ACTIVE_LOW>;
 		};
+
+		red_led: led-1 {
+			function = LED_FUNCTION_STATUS;
+			color = <LED_COLOR_ID_RED>;
+			gpios = <&pio 35 GPIO_ACTIVE_LOW>;
+		};
 	};
+
 };
 
 &eth {
