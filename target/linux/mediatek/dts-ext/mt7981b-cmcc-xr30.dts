@@ -15,11 +15,11 @@
 	mediatek,nmbm;
 	mediatek,bmt-max-ratio = <1>;
 	mediatek,bmt-max-reserved-blocks = <64>;
-}
+};
 
 @partitions {
 	partition@580000 {
 		label = "ubi";
 		reg = <0x580000 0x7200000>;
 	};
-}
+};
