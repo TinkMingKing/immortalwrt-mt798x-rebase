@@ -17,7 +17,7 @@
 	mediatek,bmt-max-reserved-blocks = <64>;
 }
 
-@partition {
+@partitions {
 	partition@580000 {
 		label = "ubi";
 		reg = <0x580000 0x7200000>;
