@@ -12,7 +12,7 @@
 };
 
 &spi0 {
-	flash@ {
+	flash@0 {
 		mediatek,nmbm;
 		mediatek,bmt-max-ratio = <1>;
 		mediatek,bmt-max-reserved-blocks = <64>;
