@@ -1404,7 +1404,7 @@ UBOOT_TARGETS := \
 	mt7981_cmcc_rax3000me-emmc-ddr4 \
 	mt7981_cmcc_rax3000me-nand-ddr3 \
 	mt7981_cmcc_rax3000me-nand-ddr4 \
-  mt7981_cmcc_xr30-nand \
+  mt7981_cmcc_xr30 \
 	mt7981_comfast_cf-wr632ax \
 	mt7981_creatlentem_clt-r30b1-ubi \
 	mt7981_cudy_tr3000-v1 \

@@ -42,7 +42,7 @@ define Device/cmcc_xr30
   IMAGE/factory.bin := append-ubi | check-size $$$$(IMAGE_SIZE)
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 endef
-TARGET_DEVICES += cmcc_xr30-stock
+TARGET_DEVICES += cmcc_xr30
 
 define Device/h3c_magic-nx30-pro-mtkuboot
   DEVICE_VENDOR := H3C
