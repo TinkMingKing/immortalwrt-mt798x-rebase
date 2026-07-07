@@ -291,7 +291,7 @@ define U-Boot/mt7981_cmcc_rax3000m-nand
   DEPENDS:=+trusted-firmware-a-mt7981-spim-nand-ddr4
 endef
 
-define U-Boot/mt7981_cmcc_xr30-nand
+define U-Boot/mt7981_cmcc_xr30
   NAME:=CMCC XR30
   BUILD_SUBTARGET:=filogic
   BUILD_DEVICES:=cmcc_xr30
