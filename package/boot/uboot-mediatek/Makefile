@@ -291,6 +291,18 @@ define U-Boot/mt7981_cmcc_rax3000m-nand
   DEPENDS:=+trusted-firmware-a-mt7981-spim-nand-ddr4
 endef
 
+define U-Boot/mt7981_cmcc_xr30-nand
+  NAME:=CMCC XR30
+  BUILD_SUBTARGET:=filogic
+  BUILD_DEVICES:=cmcc_xr30
+  UBOOT_CONFIG:=mt7981_cmcc_xr30
+  UBOOT_IMAGE:=u-boot.fip
+  BL2_BOOTDEV:=spim-nand
+  BL2_SOC:=mt7981
+  BL2_DDRTYPE:=ddr4
+  DEPENDS:=+trusted-firmware-a-mt7981-spim-nand-ddr4
+endef
+
 define U-Boot/mt7981_cmcc_rax3000me-emmc-ddr3
   NAME:=CMCC RAX3000Me
   BUILD_SUBTARGET:=filogic
@@ -1392,6 +1404,7 @@ UBOOT_TARGETS := \
 	mt7981_cmcc_rax3000me-emmc-ddr4 \
 	mt7981_cmcc_rax3000me-nand-ddr3 \
 	mt7981_cmcc_rax3000me-nand-ddr4 \
+  mt7981_cmcc_xr30-nand \
 	mt7981_comfast_cf-wr632ax \
 	mt7981_creatlentem_clt-r30b1-ubi \
 	mt7981_cudy_tr3000-v1 \
