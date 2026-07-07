@@ -25,11 +25,10 @@ define Device/cudy_tr3000-v1-mtkuboot
 endef
 TARGET_DEVICES += cudy_tr3000-v1-mtkuboot
 
-define Device/cmcc_xr30-stock
+define Device/cmcc_xr30
   DEVICE_VENDOR := CMCC
   DEVICE_MODEL := XR30
-  DEVICE_VARIANT := (H layout)
-  DEVICE_DTS := mt7981b-cmcc-xr30-stock
+  DEVICE_DTS := mt7981b-cmcc-xr30
   DEVICE_DTS_DIR := ../dts-ext
   DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 \
   automount f2fsck mkf2fs

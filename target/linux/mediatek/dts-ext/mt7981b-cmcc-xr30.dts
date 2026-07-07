@@ -11,8 +11,8 @@
 #include "mt7981b.dtsi"
 
 / {
-	model = "CMCC XR30 (stock layout)";
-	compatible = "cmcc,xr30-stock", "mediatek,mt7981";
+	model = "CMCC XR30";
+	compatible = "cmcc,xr30", "mediatek,mt7981";
 };
 
 &pio {
