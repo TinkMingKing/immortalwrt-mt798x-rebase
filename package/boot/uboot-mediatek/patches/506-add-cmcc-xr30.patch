@@ -1,5 +1,5 @@
 --- /dev/null
-+++ b/arm/dts/mt7981-cmcc-xr30.dts
++++ b/arch/arm/dts/mt7981-cmcc-xr30.dts
 @@ -0,0 +1,126 @@
 +// SPDX-License-Identifier: GPL-2.0
 +
