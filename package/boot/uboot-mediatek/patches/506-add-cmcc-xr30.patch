@@ -1,7 +1,5 @@
-Index: immortalwrt-mt798x-rebase/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7981_cmcc_xr30/u-boot-2025.10/arch/arm/dts/mt7981_cmcc-xr30.dts
-===================================================================
 --- /dev/null
-+++ immortalwrt-mt798x-rebase/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7981_cmcc_xr30/u-boot-2025.10/arch/arm/dts/mt7981_cmcc-xr30.dts
++++ immortalwrt-mt798x-rebase/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7981_cmcc_xr30/u-boot-2025.10/arch/arm/dts/mt7981-cmcc-xr30.dts
 @@ -0,0 +1,126 @@
 +// SPDX-License-Identifier: GPL-2.0
 +
