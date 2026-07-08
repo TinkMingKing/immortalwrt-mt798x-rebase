@@ -1,5 +1,5 @@
 --- /dev/null
-+++ immortalwrt-mt798x-rebase/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7981_cmcc_xr30/u-boot-2025.10/arch/arm/dts/mt7981-cmcc-xr30.dts
++++ b/arm/dts/mt7981-cmcc-xr30.dts
 @@ -0,0 +1,126 @@
 +// SPDX-License-Identifier: GPL-2.0
 +
@@ -127,10 +127,8 @@
 +&watchdog {
 +	status = "disabled";
 +};
-Index: immortalwrt-mt798x-rebase/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7981_cmcc_xr30/u-boot-2025.10/configs/mt7981_cmcc_xr30_defconfig
-===================================================================
 --- /dev/null
-+++ immortalwrt-mt798x-rebase/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7981_cmcc_xr30/u-boot-2025.10/configs/mt7981_cmcc_xr30_defconfig
++++ b/configs/mt7981_cmcc_xr30_defconfig
 @@ -0,0 +1,110 @@
 +CONFIG_ARM=y
 +CONFIG_SYS_HAS_NONCACHED_MEMORY=y
