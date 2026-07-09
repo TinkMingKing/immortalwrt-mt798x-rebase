@@ -1,6 +1,6 @@
 --- /dev/null
 +++ b/arch/arm/dts/mt7981-cmcc-xr30.dts
-@@ -0,0 +1,127 @@
+@@ -0,0 +1,129 @@
 +// SPDX-License-Identifier: GPL-2.0
 +
 +/dts-v1/;
@@ -19,11 +19,13 @@
 +		tick-timer = &timer0;
 +	};
 +
-+	config {
-+		bootcmd = "mtkboardboot";
-+		blink_led = "red:system";
-+		system_led = "white:system";
-+	};
++   options {
++       u-boot {
++          compatible = "u-boot,config";
++          boot-led = "white:system";
++          activity-led = "red:system";
++       };
++   };
 +
 +	gpio-keys {
 +		compatible = "gpio-keys";
