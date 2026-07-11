@@ -4,11 +4,11 @@
  */
 
 /dts-v1/;
-#include "mt7981b-cmcc-xr30.dtsi"
+#include "../mt7981b-cmcc-xr30.dtsi"
 
 / {
-	model = "CMCC XR30";
-	compatible = "cmcc,xr30", "mediatek,mt7981";
+	model = "CMCC XR30 NAND (MTK U-Boot layout)";
+	compatible = "cmcc,xr30-mtkuboot", "mediatek,mt7981";
 };
 
 &spi_nand {
