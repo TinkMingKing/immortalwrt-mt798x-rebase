@@ -11,7 +11,7 @@ TARGET_DEVICES += clx_s20p
 define Device/cmcc_xr30-nand-mtkuboot
   DEVICE_VENDOR := CMCC
   DEVICE_MODEL := XR30 NAND
-  DEVICE_VARIANT := ((MTK U-Boot layout))
+  DEVICE_VARIANT := (MTK U-Boot layout)
   DEVICE_DTS := mt7981b-cmcc-xr30-nand-mtkuboot
   DEVICE_DTS_DIR := ../dts-ext
   DEVICE_PACKAGES := kmod-usb3 automount f2fsck mkf2fs

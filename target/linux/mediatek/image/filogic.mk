@@ -991,33 +991,6 @@ define Device/cmcc_rax3000me
 endef
 TARGET_DEVICES += cmcc_rax3000me
 
-define Device/cmcc_xr30-nand-ubootmod
-  DEVICE_VENDOR := CMCC
-  DEVICE_MODEL := XR30 NAND
-  DEVICE_VARIANT := (OpenWrt U-Boot layout)
-  DEVICE_DTS := mt7981b-cmcc-xr30-nand-ubootmod
-  DEVICE_DTS_DIR := ../dts
-  DEVICE_PACKAGES := kmod-usb3 automount f2fsck mkf2fs
-  SUPPORTED_DEVICES := cmcc,xr30-ubootmod
-  UBINIZE_OPTS := -E 5
-  BLOCKSIZE := 128k
-  PAGESIZE := 2048
-  IMAGE_SIZE := 116736k
-  KERNEL_IN_UBI := 1
-  UBOOTENV_IN_UBI := 1
-  IMAGES := sysupgrade.itb
-  KERNEL_INITRAMFS_SUFFIX := -recovery.itb
-  KERNEL := kernel-bin | gzip
-  KERNEL_INITRAMFS := kernel-bin | lzma | \
-  fit lzma $$(KDIR)/image-$$(firstword $$(DEVICE_DTS)).dtb with-initrd | pad-to 64k
-  IMAGE/sysupgrade.itb := append-kernel | \
-  fit gzip $$(KDIR)/image-$$(firstword $$(DEVICE_DTS)).dtb external-static-with-rootfs | append-metadata
-  ARTIFACTS := preloader.bin bl31-uboot.fip
-  ARTIFACT/preloader.bin := mt7981-bl2 spim-nand-ddr4
-  ARTIFACT/bl31-uboot.fip := mt7981-bl31-uboot cmcc_xr30
-endef
-TARGET_DEVICES += cmcc_xr30-nand-ubootmod
-
 define Device/comfast_cf-e393ax
   DEVICE_VENDOR := COMFAST
   DEVICE_MODEL := CF-E393AX
