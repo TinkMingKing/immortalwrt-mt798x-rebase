@@ -10,7 +10,6 @@
 #include "mt7981b.dtsi"
 
 / {
-
 	model = "CMCC XR30 NAND (MTK U-Boot layout)";
 	compatible = "cmcc,xr30-mtkuboot", "mediatek,mt7981";
 
@@ -194,7 +193,6 @@
 				label = "ubi";
 				reg = <0x580000 0x7200000>;
 			};
-
 		};
 	};
 };

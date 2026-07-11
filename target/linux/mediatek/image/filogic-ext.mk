@@ -14,7 +14,7 @@ define Device/cmcc_xr30-nand-mtkuboot
   DEVICE_VARIANT := (MTK U-Boot layout)
   DEVICE_DTS := mt7981b-cmcc-xr30-nand-mtkuboot
   DEVICE_DTS_DIR := ../dts-ext
-  DEVICE_PACKAGES := kmod-usb3 automount f2fsck mkf2fs
+  DEVICE_PACKAGES := kmod-usb3 automount
   SUPPORTED_DEVICES := cmcc,xr30-mtkuboot
   UBINIZE_OPTS := -E 5
   BLOCKSIZE := 128k
